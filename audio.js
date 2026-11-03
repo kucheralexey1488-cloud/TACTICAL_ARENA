@@ -88,7 +88,10 @@ addEventListener('keydown', e => {
 });
 
 /* ---- start on overlay click (main.js already created ac in same event) ---- */
-$('ov').addEventListener('click', startMusic);
+const overlay = document.getElementById('ov') || $('ov');
+if (overlay) {
+    overlay.addEventListener('click', startMusic);
+}
 
 /* ---- surface-aware footsteps ----
    main.js's extras() plays noise(.07, .05, 500, 0) for every step.
