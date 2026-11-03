@@ -120,7 +120,7 @@ function stepSound(spd){
 }
 
 /* wrap noise to intercept main.js's footstep call */
-const _orig_noise = noise;
+const _orig_noise = window.noise || function(){};
 noise = function(d, v, f, rev){
   if (d === .07 && v === .05 && f === 500 && !rev){
     stepSound(Math.hypot(P.vel.x, P.vel.z));
