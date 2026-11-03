@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tactical Arena</title>
+    <!-- Подключаем твои стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Твой игровой холст -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- 1. Библиотека Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- 2. Все компоненты игры (имена файлов точно как у тебя в папке!) -->
+    <script src="world.js"></script>
+    <script src="player.js"></script>
+    <script src="weapon.js"></script>
+    <script src="sprites.js"></script>
+    <script src="audio.js"></script>
+
+    <!-- 3. Главный файл запуска (если он есть, или если вся логика в них) -->
+    <!-- Если главного файла main.js нет, а всё собирается в этих — игра запустится прямо с них! -->
+</body>
+</html>
